@@ -41,6 +41,7 @@ __ __
   > (catching exfiltration attempts and stopping it before data gets sent. Or trying to minimize how much data can be sent before being stopped.)
 - Can automatically kill processes, block network, or lock the filesystem into read only when threats are detected. 
 - And more. (TBD)
+  > Like RAT detection, crypto miner detection, etc.
 __ __
 > I am looking into using eBPF to hook into kernel syscalls for now. Doing this can give more visibility into everything happening on your system without a hit to performance.
 
