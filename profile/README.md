@@ -20,7 +20,7 @@ __ __
 
 ## Why am I doing this?
 
-I got tired of having to use clamAV and I don't want to have to pay for an enterpise subscription JUST to get a linux variant of their AV software to use. Or be locked into subscriptions just to feel a bit more safe. I wanted to try my hand at making my own tooling and software, learn more as I go, and have a good time. Eventually the things I make could be used by more people, but for now it's a personal hobby/project thing that I would use myself on my own systems.
+I got tired of having to use clamAV and I don't want to have to pay for an enterpise subscription JUST to get a linux variant of their AV software to use. Or be locked into subscriptions that can get quite pricy just to be able to use a version of the software with more convenince features. I wanted to try my hand at making my own tooling and software, learn more as I go, and have a good time. Eventually the things I make could be used by more people, but for now it's a personal hobby/project thing that I would use myself on my own systems.
 __ __
 
 <br>
