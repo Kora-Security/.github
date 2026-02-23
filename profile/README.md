@@ -33,15 +33,16 @@ __ __
 **What I want it to do:**
 - Monitor file/dir access to sensitive folders and detect if data is being read from there from software/executeables/scripts that shouldn't be soing so.
   > (browser profiles, .ssh, Documents, crypto wallets, etc. Basically anti info stealer enumeration.)
-- Track file modifications before the data gets saved and stop malicious acts before they finish.
+- Track file modifications and ransomware behaviors and then rollback data from snapshots after detection. (like CrowdStrike, SentinelOne, etc.)
   > (Ransomware encrypting a file and before the file data gets saved after writting to the file, check to see if it has been encrypted. If yes then don't save the file modifications and quarantine the threat.)
 - Analyze commands before they execute/run. Like looking for obfuscation, high entropy, known malicious patterns, etc.
   > (I want to know what's being pasted into terminals or consoles first before allowing it to run/execute. Basically anti clickfix.)
 - Track network connections and correlates them with file access.
   > (catching exfiltration attempts and stopping it before data gets sent. Or trying to minimize how much data can be sent before being stopped.)
-- Can automatically kill processes, block network, or lock the filesystem into read only when threats are detected. 
+- Can automatically kill processes, block network, or lock the filesystem into read only when threats are detected. (overkill)
+  > (Normal kill, quarentine, alert flow is what I'm aiming for.)
 - And more. (TBD)
-  > Like RAT detection, crypto miner detection, etc.
+  > Like RAT detection, crypto miner detection, rootkits, worms, backdoors, etc.
 __ __
 > I am looking into using eBPF to hook into kernel syscalls for now. Doing this can give more visibility into everything happening on your system without a hit to performance.
 
